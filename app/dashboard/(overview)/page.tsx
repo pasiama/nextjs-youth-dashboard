@@ -33,7 +33,7 @@ export default async function Page() {
           value={numberOfCustomers}
           type="customers"
         /> */}
-         <Suspense fallback={<CardsSkeleton />}>
+         <Suspense fallback={<CardsSkeleton/>}>
           <CardWrapper />
         </Suspense>
       </div>
@@ -42,7 +42,7 @@ export default async function Page() {
           <RevenueChart revenue={[]} />
         </Suspense>
         <Suspense fallback={<LatestInvoicesSkeleton />}>
-          <LatestInvoices />
+          <LatestInvoices latestInvoices={[]} />
         </Suspense>
 
       </div>
